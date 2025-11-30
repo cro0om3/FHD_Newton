@@ -8,33 +8,44 @@ This is a Streamlit app for **SNOW LIWA**:
   - Who we are
   - Experience
   - Contact
-  - Admin Dashboard
-- Payment:
-  - Uses **Ziina Payment Intent API**.
-  - Creates a payment intent and redirects user to Ziina.
-  - After payment, Ziina redirects back to the app with `result` and `pi_id` in the URL.
-- Data:
-  - Stores bookings in `data/bookings.xlsx`.
 
-## Setup
+  # SNOW LIWA – Booking & Payment App
 
-1. Create a virtual environment (optional).
-2. Install dependencies:
+  This is a Streamlit app for **SNOW LIWA**:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+  - Landing page with background from your PDF.
+  - Pages:
+    - Welcome & Ticket booking
+    - Who we are
+    - Experience
+    - Contact
+    - Admin Dashboard
+  - Payment:
+    - Uses **Ziina Payment Intent API**.
+    - Creates a payment intent and redirects user to Ziina.
+    - After payment, Ziina redirects back to the app with `result` and `pi_id` in the URL.
+  - Data:
+    - Stores bookings in `data/bookings.xlsx`.
 
-3. Put your background image here:
+  ## Setup
 
-   ```text
-   assets/snow_liwa_bg.jpg
-   ```
+  1. Create a virtual environment (optional).
+  2. Install dependencies:
 
-4. Configure Ziina secrets in `.streamlit/secrets.toml`.
+     ```bash
+     pip install -r requirements.txt
+     ```
 
-5. Run the app:
+  3. Put your background image here:
 
-   ```bash
-   streamlit run app.py
-   ```
+     ```text
+     assets/snow_liwa_bg.jpg
+     ```
+
+  4. Configure Ziina secrets in `.streamlit/secrets.toml`.
+
+  5. Run the app:
+
+     ```bash
+     streamlit run app.py
+     ```

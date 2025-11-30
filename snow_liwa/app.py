@@ -50,9 +50,9 @@ def get_ziina_config():
     except Exception:
         app_base_url = "https://snow-liwa.streamlit.app"
     try:
-        test_mode = st.secrets["ziina"].get("test_mode", True)
+        test_mode = st.secrets["ziina"].get("test_mode", False)
     except Exception:
-        test_mode = True
+        test_mode = False
     return access_token, app_base_url, test_mode
 
 ZIINA_API_BASE = "https://api-v2.ziina.com/api"
@@ -928,7 +928,8 @@ def render_welcome():
         }
         .ticket-poster-wrapper {
             width: 100%;
-            max-height: 420px;
+            height: 307px;
+            max-height: 307px;
             display: flex;
             align-items: center;
             justify-content: center;
